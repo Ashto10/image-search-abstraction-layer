@@ -1,0 +1,17 @@
+{
+  "name": "image-search-abstraction-layer",
+  "version": "1.0.0",
+  "description": "A simple image search abstraction layer, created for FreeCodeCamp (https://www.freecodecamp.org/challenges/image-search-abstraction-layer)",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.16.3"
+  },
+  "engines": {
+    "node": "9.x"
+  },
+  "repository": {
+    "url": "https://github.com/Ashto10/image-search-abstraction-layer"
+  }
+}
