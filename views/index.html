@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Image Search Abstraction Layer</title>
+    <meta name="description" content="Image Search Abstraction Layer">
+    <link id="favicon" rel="icon" href="https://glitch.com/edit/favicon-app.ico" type="image/x-icon">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/style.css">
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>
+          Image Search Abstraction Layer 
+        </h1>
+      </header>
+      <section>
+        <p>
+          A simple API that takes a search query, and returns a list of image urls, alt texts, and original urls from Imgur. An offset parameter can optionally be passed to paginate through the results.
+        </p>
+        <p>         
+          Alternatively, you can also view previous search queries and when they were made.
+        </p>
+        <div class="sample">
+          <p>
+            <code>
+              joyous-spandex.glitch.me/api/imageSearch?q=&lt;QUERY&gt;
+            </code>
+            <code>
+              joyous-spandex.glitch.me/api/imageSearch?q=&lt;QUERY&gt;&offset=&lt;OFFSET&gt;
+            </code>
+            <code>
+              joyous-spandex.glitch.me/api/latest
+            </code>
+          </p>
+        </div>
+        <form method="GET" action="/api/imageSearch">
+          <p class="attention">
+            Try it out!
+          </p>
+          <input name="q" type="text" maxlength="100" placeholder="search query" aria-labelledby="submit">
+          <input class="num" min="0" max="50" name="offset" type="number" placeholder="# offset">
+          <br/>
+          <button type="submit">Submit</button>
+          <button type="button" onclick="window.location.href='https://joyous-spandex.glitch.me/api/latest'">View Latest</button>
+        </form>
+      </section>
+    </div>
+    
+  </body>
+</html>
